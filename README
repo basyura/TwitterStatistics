@@ -1,1 +1,11 @@
 Twitter の発言数を月別・日別・時間別に出力する
+
+# twitter api 経由で発言を取得して
+# 内容をファイル(twitter.store)に保存する場合
+ruby twitter_statistics.rb id pass 1
+# 保存済みのファイル(twitter.store)から発言数を出力する場合
+ruby twitter_statistics.rb id pass
+
+注意
+api 経由取得は回数制限を受けるまで取得し続けます
+
